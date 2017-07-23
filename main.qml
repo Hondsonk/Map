@@ -45,7 +45,6 @@ Window
 
     onSwipeDistChanged:
     {
-        //console.log("SwipeDir: ", swipeDir, "SwipeDist: ", swipeDist);
         if(swipeDir == "left")
             pan(swipeDist, 0);
         else if(swipeDir == "right")
@@ -69,7 +68,6 @@ Window
         {
             id: marker
             coordinate: QtPositioning.coordinate(defaultLatitude, defaultLongitude)
-            onCoordinateChanged: console.log("Coordinate Changed");
             sourceItem: Image { id: image; source: "assets/mapMarker.png" }
         }
 
@@ -85,7 +83,6 @@ Window
 
             onLocationsChanged:
             {
-                console.log("Locations Changed");
                 dumpGeoModelData();
                 if(count)
                     marker.coordinate = get(0).coordinate

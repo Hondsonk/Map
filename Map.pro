@@ -36,6 +36,6 @@ HEADERS += \
     map_adaptor.h
 
 DISTFILES += \
-    qml/main.qml \
-    qml/MapOverlay.qml \
-    qml/SearchBar.qml
+    main.qml \
+    MapOverlay.qml \
+    SearchBar.qml
