@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>QML/main.qml</file>
+        <file>assets/mapMarker.png</file>
+        <file>main.cpp</file>
+        <file>map.cpp</file>
+        <file>map.h</file>
+        <file>QML/MapOverlay.qml</file>
+        <file>QML/SearchBar.qml</file>
+        <file>assets/search.png</file>
+    </qresource>
+</RCC>

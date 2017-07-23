@@ -1,0 +1,21 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.hondson.demo.Map">
+    <signal name="windowSizeChanged">
+      <arg type="i" direction="out"/>
+      <arg type="i" direction="out"/>
+    </signal>
+    <method name="onClicked">
+    </method>
+    <method name="onDoubleClicked">
+    </method>
+    <method name="pan">
+      <arg type="i" direction="in"/>
+      <arg type="i" direction="in"/>
+    </method>
+    <method name="swipe">
+      <arg type="s" direction="in"/>
+      <arg type="i" direction="in"/>
+    </method>
+  </interface>
+</node>
